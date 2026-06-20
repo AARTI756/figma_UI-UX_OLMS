@@ -1,73 +1,167 @@
-# React + TypeScript + Vite
+# Offer Letter Management System (OLMS)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern frontend prototype for managing the offer letter workflow in an organization.
 
-Currently, two official plugins are available:
+The application demonstrates a complete role-based hiring workflow interface, allowing different stakeholders to interact with the recruitment and offer management process through dedicated dashboards.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The Offer Letter Management System (OLMS) is a React-based UI prototype designed to visualize the end-to-end offer letter lifecycle.
 
-## Expanding the ESLint configuration
+The project focuses on user experience, workflow visualization, and role-based dashboard design.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+No backend, authentication, database, or API integration is currently implemented.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Implemented Roles
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Recruiter
+
+- Candidate management interface
+- Offer workflow tracking
+- Recruitment dashboard
+- Hiring pipeline visualization
+
+### HR Manager
+
+- Offer review dashboard
+- Approval workflow interface
+- Pending approval monitoring
+
+### Finance
+
+- Compensation review dashboard
+- Salary approval interface
+- Budget review workflow
+
+### Candidate
+
+- Offer viewing interface
+- Offer acceptance/rejection screens
+- Document submission screens
+- Onboarding progress view
+
+### Administrator
+
+- User management interface
+- Role management screens
+- System monitoring dashboard
+
+---
+
+## Features
+
+### Role Selection
+
+Users can switch between different stakeholder roles to view role-specific dashboards.
+
+### Dashboard Interfaces
+
+Dedicated dashboards for:
+
+- Recruiters
+- HR Managers
+- Finance Teams
+- Candidates
+- Administrators
+
+### Workflow Navigation
+
+Simulated workflow movement between:
+
+- Candidate Selection
+- Offer Creation
+- Offer Approval
+- Finance Review
+- Candidate Acceptance
+- Onboarding
+
+### Notification System
+
+Role-specific notifications including:
+
+- Approval requests
+- Offer status updates
+- Candidate actions
+- Workflow reminders
+
+### Responsive UI
+
+Modern responsive interface built using:
+
+- React
+- TypeScript
+- Tailwind CSS
+
+---
+
+## Technology Stack
+
+### Frontend
+
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+
+### Icons
+
+- Lucide React
+
+---
+
+## Project Structure
+
+```text
+src
+│
+├── components
+│   ├── AdminDashboard.tsx
+│   ├── CandidatePortal.tsx
+│   ├── FinanceDashboard.tsx
+│   ├── ManagerDashboard.tsx
+│   ├── RecruiterDashboard.tsx
+│   ├── RoleSelection.tsx
+│   └── TopNavbar.tsx
+│
+├── App.tsx
+├── main.tsx
+└── index.css
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Installation
+Clone Repository
+git clone https://github.com/your-username/olms-frontend.git
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Navigate to Project
+cd olms-frontend
+
+Install Dependencies
+npm install
+
+Run Development Server
+npm run dev
+
+Application will run at:
+http://localhost:5173
+
+Purpose
+
+This project was created to demonstrate the user interface and workflow design of a role-based Offer Letter Management System.
+
+It can serve as a foundation for future full-stack development.
+
+Author
+
+Aarti Sakpal
+
+B.E. Artificial Intelligence & Machine Learning
+
+Frontend Prototype Project – Offer Letter Management System (OLMS)
+Application will run at:
+
+http://localhost:5173
