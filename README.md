@@ -165,3 +165,12 @@ Frontend Prototype Project – Offer Letter Management System (OLMS)
 Application will run at:
 
 http://localhost:5173
+
+<img width="1108" height="830" alt="image" src="https://github.com/user-attachments/assets/0ba853f5-ac4f-4c35-88a2-1507e5bccfcd" />
+<img width="1882" height="862" alt="image" src="https://github.com/user-attachments/assets/28b1a33e-6631-4efd-8660-022e1ee2b2e3" />
+<img width="1877" height="865" alt="image" src="https://github.com/user-attachments/assets/795c5b25-07ca-4397-b1ed-b94954d087ec" />
+<img width="1877" height="870" alt="image" src="https://github.com/user-attachments/assets/9c8104d5-a133-4afe-93b4-9e3711c39419" />
+<img width="1862" height="852" alt="image" src="https://github.com/user-attachments/assets/becb9646-3a20-4e3a-b381-12126139dab6" />
+<img width="1852" height="863" alt="image" src="https://github.com/user-attachments/assets/11c26dda-d20e-4da2-8a87-499255bc4ee7" />
+
+demo available at : https://github.com/AARTI756/figma_UI-UX_OLMS/blob/main/OLMS_Project_demo_figma.mp4
